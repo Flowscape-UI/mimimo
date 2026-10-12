@@ -1,0 +1,24 @@
+Generated with the built-in image_gen tool, using the approved original working atlas as the sole visual reference.
+Packed at original source pixel scale (1:1), with a 24-frame / 12 fps jump trajectory and exact idle endpoint pixels.
+
+Identity-preserving animation edit of attached Flowy WORKING atlas. The user says the previous jump changed the character's scale and blue palette. This reference is the ONLY approved design and color authority. Create the happy jump key poses by modifying THIS EXACT character, not by drawing a new interpretation.
+Keep every head the SAME pixel dimensions, silhouette, navy face panel, periwinkle/cobalt flat color regions and top-right folded cyan corner as the FIRST character in this reference. Keep the tiny compact torso and stubby limbs. Precisely sample reference blue colors and cyan eyes, maintain original luminance and saturation. No lighter blue, no purple tint, no gradient, no new shading or longer body, no white eyes.
+Deliver exact 4 columns by 4 rows of equal square cells, true transparent PNG. IMPORTANT: this is a POSE BANK for later jump choreography. Put the FEET of ALL 16 characters on the SAME local baseline 92 percent down the cell. Do NOT move whole characters upward within this source sheet - vertical jump travel will be added when packing. Maintain the exact reference's character scale: about 72 percent cell width for the head and 87 percent cell height upright. No extra padding, gutters, grid lines or labels. Full body safely contained in every cell.
+Replace the working props with a joyful hop pose sequence. NO panel, stylus or floating objects in ANY frame.
+0: original neutral stance identical to reference frame0, square eyes.
+1: tiny knee bend, arms slightly back, head shape unchanged, both eyes cheerful chevrons.
+2: compressed legs/torso anticipation, head lowered but NOT squashed or enlarged, both eyes chevrons.
+3: legs extend to push off, arms swing upward, cheerful chevrons.
+4: arms raised diagonally, feet close together, torso remains short.
+5: hands above shoulders, knees gently tucked, identical unscaled head.
+6: arms spread joyfully near cheek height, tucked short feet, cheerful eyes.
+7: peak joy pose, hands up, both eyes matching upward chevrons. No tilt.
+8: same happy pose, arms begin lowering, both eyes joyful chevrons.
+9: arms lower to diagonal, legs start straightening for descent.
+10: arms out for balance, feet ready to land.
+11: legs extended toward ground, arms starting to come down, head remains same size.
+12: soft landing squash ONLY through knee bend and lower torso, both eyes closed as matching cyan slits, unscaled head.
+13: recovering from landing, hands lowering, both eyes reopen squares.
+14: near neutral stance, arms relaxed, both square eyes centered.
+15: exactly initial neutral stance again.
+Every expression uses BOTH eyes together, no winks. NO MOUTH. All faces keep EXACT approved navy panel size and shape. Do not turn toward profile or change facial perspective. Keep sprite edges crisp and pixel-stepped, large square pixel clusters, limited palette identical to reference. Single coherent character identity across all sixteen poses. No shadow, floor, particles, speed lines or background. Output just the 4x4 source pose atlas.

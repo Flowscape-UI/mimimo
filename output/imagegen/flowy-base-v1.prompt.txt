@@ -1,0 +1,12 @@
+Generated with the built-in image_gen tool.
+Reference: user-approved first Flowy concept sheet, leftmost pose.
+
+Use case: identity-preserve
+Asset type: Flowy master neutral character reference for later sprite animations, one isolated full-body character on genuine transparent background.
+Reference image is the user's APPROVED FIRST DESIGN. Reproduce the LEFTMOST front-facing character faithfully, retaining its precise identity, silhouette, head-to-body proportions, shell shape, blue palette, dark inset face, small upper-right folded/stacked component corner, short attached arms, tiny feet, and cyan flowing zigzag chest emblem. Do not redesign, elongate, change head shape, invent new anatomy, or incorporate any other concepts.
+Create EXACTLY ONE character, centered in a square canvas with comfortable transparent margins around all edges, fully visible.
+BASE POSE: directly front-facing upright neutral stance, head completely level, face and chest facing straight forward; two equally sized cyan square eyes aligned horizontally and looking forward; short arms hanging comfortably at the sides, slight separation from torso so silhouettes are clear; hands relaxed, feet planted on exactly the same baseline, separated by a small gap. Balanced static idle reference, no action, no tilt, no rotation or foreshortening.
+ONLY INTENTIONAL FACE CHANGE: remove the small smiling mouth following the user's earlier explicit preference. Face contains only two square cyan eyes and is blank below the eyes. No mouth, no nose, no brows.
+Preserve the first reference's charming large chunky rounded blue head, offset top-right folded blue/cyan corner, compact body, dark navy face panel and small mitten hands. Do not replace with a monitor shape or floating disconnected pieces.
+STYLE: crisp coarse-grid 2D pixel art, visibly square pixel clusters, clean hard stair-step contours, consistent pixel scale across face, body, chest emblem and limbs. Restrained blue shading with flat highlight clusters, nearest-neighbor enlarged sprite aesthetic. Keep the reference's blue/periwinkle highlights, cobalt shadows, deep navy outlines and face, cyan eyes and chest mark. No blur, antialiasing, gradients, grain or painterly texture.
+Transparent background with actual alpha, no checkerboard rendered into image, no floor, no cast shadow, no glow, no props, no stylus, no drawing square, no words, no labels, no multiple poses. One faithful clean master base pose of the approved first character, minus mouth.

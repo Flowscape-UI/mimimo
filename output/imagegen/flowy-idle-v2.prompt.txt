@@ -1,0 +1,35 @@
+Generated with the built-in image_gen tool. Revision: synchronized eyes and visible torso turns.
+
+First edit:
+Precisely edit the attached Flowy 4x4 idle sprite sheet. Preserve the same character in the same 16 cells, same body/head breathing poses, same proportions, palette, folded cyan corner at upper-right of head, small chest logo, baseline, transparent background, and pixel-art style.
+USER CORRECTION: eyes must ALWAYS act together as a matched pair. Remove all unilateral blinking/winking. Both eyes translate left or right TOGETHER by the same amount, with stable spacing. Both eyes have identical shape, size and vertical opening in every frame. Never have one eye square and the other a slit or short rectangle.
+Specific fixes:
+- Row 2 column 1 (frame 4): BOTH eyes are equally closed short horizontal cyan slits, aligned at the same height.
+- Row 2 column 2 (frame 5): BOTH eyes reopening together as equal short cyan rectangles, same height.
+- Row 3 column 4 (frame 11): BOTH eyes are equally closed horizontal cyan slits.
+- Row 4 column 1 (frame 12): BOTH eyes reopening together as equal short rectangles.
+- All other frames: BOTH eyes open matching cyan squares. Their gaze shifts as a pair: centered in frames 0-1, slightly viewer-left in 2-5, back center in 6-8, slightly viewer-right in 9-12, center again in 13-15. Never converge, diverge, move independently or swap eye shapes. Keep roughly equal distance between the eye centers throughout.
+Do NOT change any other character feature or introduce a mouth. No redesign. No new poses. Retain the subtle breathing and tiny body yaw from source. Exactly 4 rows and 4 columns with equal cells, zero gutters, no visible grid, no text or labels, genuine alpha transparency, no glow, no cast shadow, no background. Output the updated sprite atlas only.
+
+Final edit:
+Edit this Flowy 4x4 idle sprite sheet to add visible, subtle TORSO rotation and perfectly synchronized eyes. Deliver exactly 16 complete full-body sprites in a regular 4-column 4-row square RGBA transparent atlas, read row-major. Keep the same blue pixel character, large rounded head, upper-RIGHT folded cyan corner, tiny legs, short arms, chest flowing zigzag emblem, no mouth.
+CRITICAL CHANGE 1 - BODY TURN: The torso MUST visibly turn in perspective, not only the head moving. For a viewer-left glance, rotate the chest 12-15 degrees toward viewer LEFT: shift the chest logo left on the torso, compress its width slightly, show a wider dark-blue side plane on the viewer RIGHT of the torso; bring the viewer-right shoulder and short arm slightly forward, and partly occlude the far viewer-left arm behind the chest. Mirror that torso perspective for viewer-right glance: chest logo shifts right, visible side plane on viewer LEFT, left shoulder slightly forward, far right arm partly hidden. Feet remain planted in the same places. Head follows the same mild yaw. No waving, no walking, no tilting the entire sprite. Breathing only 1-2 logical pixel rise at shoulders. Actual chest plane and shoulder/arm placement must change together. The torso turn should be readable even if you cover the head with your hand.
+CRITICAL CHANGE 2 - EYES: Both eyes always act in unison. Both fully open equal cyan squares OR both closed equal cyan horizontal slits. NO half-open asymmetry, no one-eye wink. In all open-eye frames their shapes, size, height are identical and their spacing is constant. Gaze translates the pair together across the face panel.
+16 FRAME CHOREOGRAPHY:
+row1 col1 front neutral, both square eyes centered.
+row1 col2 front slight inhale, both eyes centered.
+row1 col3 chest begins turning left 7 degrees, both eyes left.
+row1 col4 chest turned left 15 degrees, both eyes left open.
+row2 col1 chest stays left, BOTH eyes closed horizontal slits.
+row2 col2 chest stays left, BOTH eyes fully open matching squares. THIS CELL PREVIOUSLY HAD MISMATCHED EYES: FIX BOTH OPEN.
+row2 col3 chest returning front through 7 degrees left, BOTH eyes centered open.
+row2 col4 front neutral, both eyes centered.
+row3 col1 front inhale, both eyes centered.
+row3 col2 chest starts turning right 7 degrees, both eyes right.
+row3 col3 chest right 15 degrees, both eyes right open.
+row3 col4 chest right, BOTH eyes closed matching slits.
+row4 col1 chest stays right, BOTH eyes fully open equal squares.
+row4 col2 chest returning front through 7 degrees right, both eyes center.
+row4 col3 front exhale, both eyes center.
+row4 col4 front neutral matching initial pose.
+Fixed character size and feet baseline in every equal cell, generous transparent margins. Keep strict hard-edged chunky 2D pixel art, the same blue/cyan palette. No smoothing, no redesign, no cloud change, no mirrored head corner, no text or grid lines. Genuine transparent background, no painted checkerboard or shadow. Output only the sprite atlas.

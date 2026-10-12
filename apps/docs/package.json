@@ -1,0 +1,24 @@
+{
+  "name": "@mimimo/docs",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev --host 127.0.0.1 --port 5192 --strictPort",
+    "build": "vitepress build",
+    "typecheck": "tsc --noEmit",
+    "test:browser": "playwright test",
+    "preview": "vitepress preview --host 127.0.0.1 --port 5193 --strictPort"
+  },
+  "dependencies": {
+    "mimimo": "workspace:*",
+    "mimimo-pet-mochi": "workspace:*",
+    "mimimo-pet-byte": "workspace:*"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "vite": "8.3.2",
+    "vitepress": "1.6.4",
+    "vue": "3.5.43"
+  }
+}

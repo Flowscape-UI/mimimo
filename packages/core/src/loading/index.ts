@@ -1,0 +1,1 @@
+export { loadAssets } from './assets';

@@ -1,0 +1,9 @@
+{
+  "type": "sprite",
+  "path": "./flowy-working-v1.png",
+  "columns": 8,
+  "rows": 4,
+  "frameCount": 32,
+  "fps": 4,
+  "loop": false
+}

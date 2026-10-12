@@ -1,0 +1,9 @@
+{
+  "type": "sprite",
+  "path": "./flowy-happy-v1.png",
+  "columns": 8,
+  "rows": 3,
+  "frameCount": 23,
+  "fps": 8,
+  "loop": false
+}

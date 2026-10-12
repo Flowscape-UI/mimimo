@@ -1,0 +1,39 @@
+Generated with the built-in image_gen tool. Packed into a timed sequence with the exact first idle-v2 frame at both ends.
+
+Use case: stylized-concept / identity-preserve.
+Create a WORKING animation sprite atlas for the attached approved Flowy pixel mascot. Reference 1 is his approved static base identity; reference 2 is his current idle animation. The work sequence MUST preserve the same head and body proportions, chunky blue pixel art, small top-right folded cyan corner, dark navy face, two cyan geometric eyes and NO MOUTH. Both eyes act together, never one-eye winks.
+OUTPUT: exact 4 columns x 4 rows of equal SQUARE cells = 16 complete keyframes, ordered left-to-right top-to-bottom. Square PNG, genuine alpha transparency, no gutters, no outer padding, no drawn grid, no text or frame numbers.
+Within every cell keep the character the SAME SIZE and FEET BASELINE. Character occupies ~70 percent of cell width and 82 percent of height, centered, baseline 92 percent. Head about 60 percent of character height. No walking. All prop pixels stay inside the same cell. Feet never clipped.
+ACTION: Flowy opens Flowscape as a small floating dark-navy DESIGN CANVAS window in front of his chest, draws one cyan circle, one cyan square and one cyan triangle, thinks, rearranges the shapes, nods approvingly, closes the project, returns neutral. Window is centered OVER the chest at the lower half of the character, NOT to the side of the head; it must never obscure the face or feet. Window has a thin blue/cyan pixel border, a tiny blue-to-cyan flowing zigzag logo in header and small close icon at upper right, no written words. Short hands operate a tiny cyan stylus and drag shapes. Use clear readable outline circle/square/triangle, exactly three shapes by completion. Character torso and shoulders turn subtly toward the active hand, looks at the canvas.
+EXACT KEYFRAME STORY:
+Row1 col1: neutral front idle, arms down, NO panel, no stylus, eyes forward.
+Row1 col2: one hand taps a small cyan floating project tile in front of chest; the tile begins opening.
+Row1 col3: open BLANK canvas window across chest, one hand with stylus poised over it, both eyes looking down toward window.
+Row1 col4: stylus drawing a partial curved arc, beginning a circle, canvas otherwise empty.
+Row2 col1: circle complete on left of canvas; stylus starts the first side of a square in middle.
+Row2 col2: circle plus completed square; stylus starts a triangle at right.
+Row2 col3: circle, square, triangle all completed, slightly irregular spacing and vertical alignment.
+Row2 col4: character THINKS: tiny head tilt, one hand touching cheek/chin area outside face visor, both eyes small matching contemplative diamonds, examines three shapes. No mouth.
+Row3 col1: thinking hold with mild head/body lean toward canvas, shapes unchanged.
+Row3 col2: hand selects and drags circle downward a small distance, square and triangle remain; small pixel selection handles around circle.
+Row3 col3: hand drags square sideways and downward into alignment with circle; selection handles around square; triangle stays.
+Row3 col4: hand moves triangle into alignment; circle square triangle now evenly spaced in an orderly row.
+Row4 col1: composition complete, three aligned shapes, hand releases canvas, head lifts slightly, both eyes happy matching upward chevrons.
+Row4 col2: small approving NOD: head lowered a few pixels toward canvas, shoulders follow; aligned shapes remain unchanged, both eyes matching closed happy slits.
+Row4 col3: hand taps close icon, panel visibly SHRINKS toward a tiny tile at chest, both eyes open.
+Row4 col4: panel and stylus completely gone; arms down; EXACTLY the original neutral front idle pose again, both square eyes centered.
+Keep the panel in the same position/size during open frames; only shapes and hands change. Keep the top-right folded corner on the same side all frames. No unrelated holograms, props, speech bubbles, symbols around head, laptop, desk, floor or cast shadow. Classic chunky 2D pixel sprites, hard pixel contours, restrained flat cobalt/periwinkle/cyan palette. No 3D, blur, text, painted checkerboard. All sixteen cells must contain the full character and the described stage, consistent scale and baseline.
+
+Refinement:
+Targeted refinement of attached Flowy WORKING 4x4 sprite atlas. Preserve exact 16-cell layout, transparent background, character design, poses, all head shapes and expressions, palette, feet baseline and canvas window.
+Change ONLY the arrangement of the three shapes INSIDE the drawing canvas so rearrangement is visibly meaningful. Keep circle, square, triangle crisp cyan outlines.
+Frames are row-major zero-based.
+Frame 4 (row2 col1): completed circle near upper LEFT of drawing area, partial square near lower CENTER.
+Frame 5 (row2 col2): circle upper left, complete square lower center, partial triangle upper right.
+Frame 6 (row2 col3): circle upper left, square lower center, complete triangle upper right. They form a visibly staggered layout, NOT a straight row.
+Frames 7 and 8 (thinking poses row2 col4 and row3 col1): keep EXACTLY that staggered layout - circle upper left, square lower center, triangle upper right.
+Frame 9 (row3 col2): character selects circle and moves it DOWN toward the final horizontal middle row, showing selection handles ONLY on circle; square is still lower center, triangle still upper right.
+Frame 10 (row3 col3): circle now at final middle-left; square selected and moved UP into final middle-center; triangle still upper-right.
+Frame 11 (row3 col4): circle and square in final positions; triangle selected and moved DOWN to final middle-right. Now all three align neatly in one row with equal spacing.
+Frames 12 and 13 (row4 col1,col2): preserve neat final aligned circle-square-triangle row, satisfied eyes then small approving downward head nod. Keep three shapes entirely inside the panel.
+All shape sizes equal to source, movement at least about half a shape diameter, maintain safe space under window header. Do not change frame 0,1,2,3,14,15. Both eyes always act together, no mouth. No new props, no text, no extra fingers, no changes to chest emblem or head folded upper-right corner. Exactly 4x4 cells, real alpha transparency.

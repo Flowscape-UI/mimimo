@@ -1,0 +1,22 @@
+{
+  "name": "@mimimo/playground",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "test:browser": "playwright test"
+  },
+  "dependencies": {
+    "@flowscape-ui/dsk": "1.0.0",
+    "mimimo": "workspace:*",
+    "mimimo-pet-byte": "workspace:*",
+    "mimimo-pet-mochi": "workspace:*"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "vite": "8.3.2"
+  }
+}

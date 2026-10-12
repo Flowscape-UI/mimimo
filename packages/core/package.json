@@ -1,0 +1,26 @@
+{
+  "name": "mimimo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Tiny website companions with a framework-independent TypeScript API.",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/*.test.ts"
+  },
+  "devDependencies": {
+    "tsdown": "0.23.1"
+  }
+}

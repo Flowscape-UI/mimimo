@@ -1,0 +1,30 @@
+Generated with the built-in image_gen tool from flowy-base-v1.png.
+
+Use case: identity-preserve. Deliverable: actual usable 16-frame animation SPRITE SHEET, not a character concept sheet.
+Use the attached approved Flowy base sprite as the strict identity reference. Preserve his compact blue chunky pixel-art body, big blue rounded head with folded blue/cyan component corner on upper right, deep navy inset face with cyan eyes, no mouth, chest flowing cyan zigzag, short connected arms, tiny feet. Do not redesign.
+CANVAS: square RGBA transparent PNG. EXACTLY 4 columns by 4 rows = 16 equally sized square cells. Full image is entirely the grid with zero outer sheet margins, zero gutters, zero labels and no drawn grid lines. Every cell contains ONE complete Flowy sprite. Order is row-major left-to-right, top-to-bottom. Consistent absolute character scale and local positioning in every cell. Character about 68 percent of cell width and 80 percent of cell height; center x=50 percent; FEET BASELINE y=90 percent of each cell, same in ALL 16 cells. Transparent clearance on all sides. No crossing into neighbor cells.
+ANIMATION: quiet 4-second looping idle, 4 fps. Feet stay planted, torso breathing amplitude only 1-2 logical pixels. Head follows breath gently. Character barely turns left/right, maximum 6 degrees, never side view. Arms stay down. Eyes glance as whole cyan eye shapes move together inside navy panel. TWO eyes always, NO MOUTH. Tiny friendly asymmetric blink: one eye compresses vertically into a short horizontal cyan slit while the other remains a square. Do not add pupils, cheeks or third facial marks.
+EXACT FRAME SEQUENCE, numbers describe cells but MUST NOT be drawn:
+0 neutral reference front, both eyes square centered.
+1 slight inhale, head and shoulders rise 1 logical pixel, eyes centered.
+2 soft inhale peak, both eyes shift slightly toward viewer LEFT.
+3 slight body/head yaw LEFT following gaze, both eyes open.
+4 same left glance, viewer-LEFT eye closed horizontal slit, viewer-right eye open square.
+5 same left glance, viewer-left eye reopening to short rectangle, other square.
+6 both eyes open, body and gaze returning to center, exhale.
+7 centered neutral almost identical to 0.
+8 centered gentle second inhale, eyes forward.
+9 inhale peak, eyes shift viewer RIGHT.
+10 slight body/head yaw RIGHT following gaze, both open.
+11 same right glance, viewer-RIGHT eye closed horizontal slit, viewer-left eye open square.
+12 viewer-right eye reopening to short rectangle.
+13 both eyes open, right glance softens, body returns center.
+14 centered exhale nearly reference pose.
+15 exactly neutral reference pose, matching frame 0 to loop.
+STYLE: identical coarse 2D pixel art and palette in all frames. Strong readable chunky square pixels, hard contours, simple flat blue shading, no new detail, no smooth 3D or painterly rendering. Every character must have IDENTICAL head size, body size, arm and leg length, face opening and top-right folded corner. Only specified minute breathing, glancing and blink changes. NO smiling mouths. Genuine transparent alpha background in every empty region, no checkerboard baked in, no floor, no cast shadows, no glow, no text, no numbers, no props. Output only the exact 4x4 sprite atlas.
+
+Correction pass:
+Precise correction of attached 4x4 Flowy sprite atlas. Keep the same 16-frame idle animation, same coarse pixel art, exact 4 columns and 4 rows, transparent RGBA background, same character identities, eye states, look-left/look-right motion, body proportions, small breathing motion.
+FIX ONE IDENTITY ERROR: in ROW THREE, COLUMN THREE (zero-based frame 10), the small folded cyan/blue corner of the head is incorrectly on the viewer's LEFT side. Redraw this single character's head so the small folded cyan/blue corner is on the viewer's RIGHT side, just as in ALL the other 15 characters. In that frame preserve the eyes looking viewer-right. The left side of its head must be the normal rounded blue contour without any folded corner.
+Also ensure exact regular equal-size grid positioning: all feet at 90 percent cell height, character centered within each own cell, whole sprites within cells; no overlap or clipping.
+No other changes to design, motions, eye expressions, or color scheme. No mouth. No extra frames, no labels, no visible grid lines. Genuine transparent background, no painted checkerboard, no stray pixels in the empty gutters. Crisp hard pixel edges. Output a square 4x4 atlas only.

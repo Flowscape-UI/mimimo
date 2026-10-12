@@ -1,0 +1,332 @@
+<main id="main">
+  <section class="hero shell" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow">
+        <span class="status-dot"></span>МАЛЕНЬКИЕ ДРУЗЬЯ. БОЛЬШОЙ ХАРАКТЕР.
+      </p>
+      <h1 id="hero-title">
+        Немного жизни.<br />Много<span class="joy-word"
+          >радости.<svg viewBox="0 0 240 22" aria-hidden="true">
+            <path d="M5 15Q95 0 232 11" /></svg
+        ></span>
+      </h1>
+      <p class="intro">
+        Знакомьтесь с другом, который оживит ваш интерфейс. Ваша графика,
+        немного кода — и свой неповторимый характер.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="/guide/introduction"
+          >Начать<span aria-hidden="true">↗</span></a
+        ><button class="button secondary" id="meet">
+          Знакомьтесь, Flowy<span aria-hidden="true">✳</span>
+        </button>
+      </div>
+      <p class="hero-note">Создан для веба. Готов стать вашим.</p>
+    </div>
+    <div class="world-wrap">
+      <div class="world" id="world" aria-label="Красочная мастерская Flowy">
+        <div class="world-top">
+          <span><i></i>Мир Flowy</span><span>Мастерская</span>
+        </div>
+        <div class="scene-layer scenery" data-depth="0.4" aria-hidden="true">
+          <div class="sun-disc"></div>
+          <svg class="rainbow" viewBox="0 0 600 490">
+            <path d="M70 500V275a220 220 0 0 1 440 0v225" stroke="#f477c5" />
+            <path d="M110 500V275a180 180 0 0 1 360 0v225" stroke="#ff705e" />
+            <path d="M150 500V275a140 140 0 0 1 280 0v225" stroke="#ffbe3d" />
+            <path d="M190 500V275a100 100 0 0 1 200 0v225" stroke="#35dff2" />
+          </svg>
+          <div class="back-step"></div>
+          <div class="floor-grid"></div>
+        </div>
+        <div class="scene-layer middle" data-depth="1" aria-hidden="true">
+          <div class="ring"></div>
+          <div class="cube"><i></i></div>
+          <div class="spark spark-one">✦</div>
+          <div class="spark spark-two">✧</div>
+          <div class="podium"></div>
+        </div>
+        <div class="pet-stage" id="pet-stage"></div>
+        <div class="scene-layer foreground" data-depth="1.8" aria-hidden="true">
+          <div class="ball"></div>
+          <div class="triangle"></div>
+          <div class="little-star">✳</div>
+          <div class="scene-ticket">
+            Маленький друг.<br /><strong>Большая фантазия.</strong>
+          </div>
+        </div>
+        <div
+          class="scene-bottom"
+          tabindex="0"
+          role="region"
+          aria-label="Новости Flowy. Наведите курсор или установите фокус, чтобы остановить ленту."
+        >
+          <div class="scene-ticker-track">
+            <div class="scene-ticker-group">
+              <span>Маленькие друзья. Большой характер.</span
+              ><i aria-hidden="true">✦</i
+              ><span>У интерфейсов будущего есть маленький друг.</span
+              ><i aria-hidden="true">✦</i
+              ><span>Больше радости на сайтах. Больше жизни в приложениях.</span
+              ><i aria-hidden="true">✦</i
+              ><span>Даже маленькое «привет» меняет настроение.</span
+              ><i aria-hidden="true">✦</i
+              ><span>Flowscape открывает простор для фантазии.</span
+              ><i aria-hidden="true">✦</i
+              ><span>Создано людьми, которым важна каждая мелочь.</span
+              ><i aria-hidden="true">✦</i>
+            </div>
+            <div class="scene-ticker-group" aria-hidden="true">
+              <span>Маленькие друзья. Большой характер.</span
+              ><i aria-hidden="true">✦</i
+              ><span>У интерфейсов будущего есть маленький друг.</span
+              ><i aria-hidden="true">✦</i
+              ><span>Больше радости на сайтах. Больше жизни в приложениях.</span
+              ><i aria-hidden="true">✦</i
+              ><span>Даже маленькое «привет» меняет настроение.</span
+              ><i aria-hidden="true">✦</i
+              ><span>Flowscape открывает простор для фантазии.</span
+              ><i aria-hidden="true">✦</i
+              ><span>Создано людьми, которым важна каждая мелочь.</span
+              ><i aria-hidden="true">✦</i>
+            </div>
+          </div>
+        </div>
+        <span class="scene-status" id="pet-status" role="status"
+          >Маленький привет от Flowy.</span
+        >
+      </div>
+      <div class="world-controls">
+        <div class="reaction-controls" aria-label="Общение с Flowy">
+          <button id="hello">
+            Поздороваться<span aria-hidden="true">↗</span></button
+          ><button id="work">Творить<span aria-hidden="true">◇</span></button
+          ><button id="celebrate">
+            Порадоваться<span aria-hidden="true">✳</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cast-section" aria-labelledby="cast-title">
+    <div class="cast-heading shell">
+      <div>
+        <p class="eyebrow">МАЛЕНЬКИЕ ДРУЗЬЯ. ЦЕЛЫЕ МИРЫ.</p>
+        <h2 id="cast-title">Знакомьтесь с героями.</h2>
+      </div>
+      <p>
+        Разная внешность. Разные характеры.<br />Чуть больше жизни, где бы они
+        ни оказались.
+      </p>
+    </div>
+    <div class="cast-gallery">
+      <a
+        class="cast-panel cast-mochi"
+        href="/components/#пакеты-персонажей"
+        aria-label="Знакомьтесь с Mochi, который поднимает настроение"
+      >
+        <div class="cast-backdrop" aria-hidden="true"></div>
+        <span class="cast-number" aria-hidden="true">01 / МЕЧТАТЕЛЬ</span>
+        <div class="cast-portrait">
+          <img
+            src="{{mochi}}"
+            alt="Mochi, розовый улыбающийся питомец"
+            loading="lazy"
+            width="260"
+            height="260"
+          />
+        </div>
+        <div class="cast-caption">
+          <span class="cast-kicker">ЗАРЯД ХОРОШЕГО НАСТРОЕНИЯ</span>
+          <h3>Mochi<span aria-hidden="true">✿</span></h3>
+          <p>Мягкий характер. Море радости.</p>
+          <span class="cast-link">Познакомиться поближе ↗</span>
+        </div>
+      </a>
+      <a
+        class="cast-panel cast-byte"
+        href="/components/#пакеты-персонажей"
+        aria-label="Знакомьтесь с Byte, любознательным другом"
+      >
+        <div class="cast-backdrop" aria-hidden="true"></div>
+        <span class="cast-number" aria-hidden="true">02 / ИССЛЕДОВАТЕЛЬ</span>
+        <div class="cast-portrait">
+          <img
+            src="{{byte}}"
+            alt="Byte, мятный робот-питомец"
+            loading="lazy"
+            width="260"
+            height="260"
+          />
+        </div>
+        <div class="cast-caption">
+          <span class="cast-kicker">ВАШ ЛЮБОЗНАТЕЛЬНЫЙ ДРУГ</span>
+          <h3>Byte<span aria-hidden="true">✦</span></h3>
+          <p>Каждый клик — новое приключение.</p>
+          <span class="cast-link">Познакомиться поближе ↗</span>
+        </div>
+      </a>
+      <a
+        class="cast-panel cast-flowy"
+        href="#main"
+        aria-label="Знакомьтесь с Flowy в мастерской"
+      >
+        <div class="cast-backdrop" aria-hidden="true"></div>
+        <span class="cast-number" aria-hidden="true"
+          >03 / МАЛЕНЬКИЙ ТВОРЕЦ</span
+        >
+        <div class="cast-portrait">
+          <div
+            class="cast-flowy-sprite"
+            role="img"
+            aria-label="Flowy, синий пиксельный художник"
+          ></div>
+        </div>
+        <div class="cast-caption">
+          <span class="cast-kicker">ФАНТАЗИЯ БЕЗ ОСТАНОВКИ</span>
+          <h3>Flowy<span aria-hidden="true">✳</span></h3>
+          <p>Маленькая идея. Море возможностей.</p>
+          <span class="cast-link">Вернуться в мастерскую ↗</span>
+        </div>
+      </a>
+    </div>
+    <p class="cast-footnote">
+      Ваша графика. Ваш характер.<a href="/guide/api"
+        >Создайте своего героя ↗</a
+      >
+    </p>
+  </section>
+  <section class="personality shell" aria-labelledby="personality-title">
+    <div class="section-heading">
+      <p class="eyebrow">БОЛЬШЕ, ЧЕМ КРАСИВЫЙ СПРАЙТ</p>
+      <h2 id="personality-title">
+        Подарите интерфейсу<br />того, кого хочется<span>поддержать.</span>
+      </h2>
+      <p>
+        Приветствие, немного поддержки, радостный танец в нужный момент.<br />Такие
+        мелочи делают знакомство с интерфейсом особенным.
+      </p>
+    </div>
+    <div class="moments">
+      <article class="moment coral">
+        <div class="moment-art" aria-hidden="true">
+          <span class="cursor-icon">↖</span><span class="click-burst">✳</span>
+        </div>
+        <span class="chapter">01 / РЕАГИРОВАТЬ</span>
+        <h3>Один клик. Искра радости.</h3>
+        <p>Наведение, клик или перетаскивание — повод показать характер.</p>
+        <code>pet.react('happy')</code>
+      </article>
+      <article class="moment yellow">
+        <div class="moment-art" aria-hidden="true">
+          <span class="chat-art">У тебя получится!<b>✦</b></span>
+        </div>
+        <span class="chapter">02 / ОБЩАТЬСЯ</span>
+        <h3>Друг, которому есть что сказать.</h3>
+        <p>
+          Встречайте гостей, подсказывайте следующий шаг и радуйтесь маленьким
+          победам.
+        </p>
+        <code>pet.say('Отличная работа!')</code>
+      </article>
+      <article class="moment pink">
+        <div class="moment-art shapes-art" aria-hidden="true">
+          <span>●</span><span>■</span><span>▲</span>
+        </div>
+        <span class="chapter">03 / СОЗДАВАТЬ СВОЁ</span>
+        <h3>Ваш мир. Ваш персонаж.</h3>
+        <p>
+          Используйте свои спрайты, изображения или видео. Подарите питомцу
+          собственный стиль.
+        </p>
+        <a href="/guide/api">Изучить API<span aria-hidden="true">↗</span></a>
+      </article>
+    </div>
+  </section>
+  <section class="code-section shell" id="get-started">
+    <div class="code-copy">
+      <p class="eyebrow">ПРОСТОЙ СТАРТ. БОЛЬШОЙ ХАРАКТЕР.</p>
+      <h2>Пара строк.<br /><span>Новый друг.</span></h2>
+      <p>
+        Поселите питомца внутри компонента или на всей странице. Вы создаёте
+        персонажа. Mimimo оживляет его.
+      </p>
+      <a class="button primary" href="/guide/introduction"
+        >Открыть документацию<span aria-hidden="true">↗</span></a
+      >
+      <div class="code-doodle" aria-hidden="true">{ <span>✳</span> }</div>
+    </div>
+    <div class="editor">
+      <div class="editor-top">
+        <span><i></i><i></i><i></i></span><span>hello-friend.ts</span
+        ><button id="copy-code">Скопировать код</button>
+      </div>
+      <div class="starter-tabs">
+        <button data-example="global" aria-pressed="true">
+          На всей странице</button
+        ><button data-example="local" aria-pressed="false">
+          Внутри компонента
+        </button>
+      </div>
+      <pre><code id="starter-code"></code></pre>
+      <div class="editor-foot">
+        TypeScript <span>Немного кода — столько возможностей.</span>
+      </div>
+    </div>
+  </section>
+  <section class="closing shell">
+    <span aria-hidden="true">✳</span>
+    <h2>Интернету не помешает<br />чуть больше<em>характера.</em></h2>
+    <a href="/guide/introduction"
+      >Давайте добавим жизни<span aria-hidden="true">↗</span></a
+    >
+  </section>
+  <footer class="site-footer shell">
+    <div class="footer-top">
+      <div class="footer-about">
+        <p class="footer-credit">Проект команды Flowscape</p>
+        <h2>
+          Мы создаём маленьких друзей<br />для тех, кто создаёт<br /><span
+            >творческие миры.</span
+          >
+        </h2>
+        <p>
+          Ваша графика. Ваша фантазия.<br />Чуть больше жизни в каждом
+          интерфейсе.
+        </p>
+      </div>
+      <nav class="footer-column" aria-label="Документация в подвале">
+        <h3>Документация</h3>
+        <a href="/guide/introduction">Знакомство</a>
+        <a href="#get-started">Быстрый старт</a>
+        <a href="/guide/environments">Окружения</a>
+        <a href="/guide/api">Обзор API</a>
+      </nav>
+      <nav class="footer-column" aria-label="Компоненты в подвале">
+        <h3>Компоненты</h3>
+        <a href="/components/#спутник">Спутник</a>
+        <a href="/components/#графика-и-анимация">Графика и анимация</a>
+        <a href="/components/#сообщения">Сообщения</a>
+        <a href="/components/#свои-панели">Свои панели</a>
+        <a href="/components/#пакеты-персонажей">Пакеты персонажей</a>
+      </nav>
+      <nav class="footer-column" aria-label="Проект в подвале">
+        <h3>Проект</h3>
+        <a href="https://github.com/Flowscape-UI/mimimo"
+          >GitHub <span aria-hidden="true">↗</span></a
+        >
+        <a href="https://github.com/Flowscape-UI/mimimo/issues"
+          >Отзывы и идеи<span aria-hidden="true">↗</span></a
+        >
+        <a href="https://github.com/Flowscape-UI"
+          >Команда Flowscape<span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© {{year}} Команда Flowscape</p>
+      <p>Mimimo · Маленькие друзья. Большой характер.</p>
+      <a href="#main">Наверх<span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+</main>

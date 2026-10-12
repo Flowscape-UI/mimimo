@@ -1,0 +1,36 @@
+{
+  "id": "flowy",
+  "name": "Flowy",
+  "width": 192,
+  "height": 192,
+  "initialState": "idle",
+  "animations": {
+    "idle": {
+      "type": "sprite",
+      "path": "./flowy-idle-v2-padded.png",
+      "columns": 4,
+      "rows": 4,
+      "frameCount": 16,
+      "fps": 4,
+      "loop": true
+    },
+    "working": {
+      "type": "sprite",
+      "path": "./flowy-working-v1.png",
+      "columns": 8,
+      "rows": 4,
+      "frameCount": 32,
+      "fps": 4,
+      "loop": false
+    },
+    "happy": {
+      "type": "sprite",
+      "path": "./flowy-happy-v2.png",
+      "columns": 8,
+      "rows": 3,
+      "frameCount": 24,
+      "fps": 12,
+      "loop": false
+    }
+  }
+}

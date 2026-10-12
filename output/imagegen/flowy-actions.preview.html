@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flowy - happy & working</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #0c1018;
+        color: #dfeaff;
+        font: 16px system-ui;
+      }
+      main {
+        width: min(480px, 100%);
+        padding: 24px;
+        text-align: center;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      .stage {
+        height: 320px;
+        display: grid;
+        place-items: center;
+      }
+      canvas {
+        width: min(320px, 100%);
+        height: auto;
+        image-rendering: pixelated;
+      }
+      canvas[hidden] {
+        display: none;
+      }
+      output {
+        display: block;
+        min-height: 28px;
+        color: #39d9ee;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 16px 0;
+      }
+      button {
+        font: inherit;
+        padding: 9px 14px;
+        border: 1px solid #354765;
+        border-radius: 10px;
+        background: #172138;
+        color: inherit;
+        cursor: pointer;
+      }
+      button:focus-visible,
+      input:focus-visible {
+        outline: 2px solid #39d9ee;
+        outline-offset: 4px;
+      }
+      label {
+        display: inline-block;
+        padding: 10px;
+      }
+      input {
+        accent-color: #39d9ee;
+      }
+      p {
+        color: #9eafc8;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      @media (max-width: 350px) {
+        .stage {
+          height: 260px;
+        }
+      }
+    </style>
+    <script src="dist/flowy-actions.preview.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Flowy</h1>
+      <div class="stage">
+        <canvas width="384" height="384" aria-label="Анимация Flowy"></canvas>
+      </div>
+      <output aria-live="polite">Загрузка…</output>
+      <nav aria-label="Анимации">
+        <button data-action="happy" disabled>Радостный прыжок</button>
+        <button data-action="working" disabled>Working</button>
+        <button data-action="idle" disabled>Idle</button>
+      </nav>
+      <label><input type="checkbox" id="pause" /> Пауза</label>
+      <label><input type="checkbox" id="hide" /> Скрыть</label>
+      <p>После прыжка или работы Flowy автоматически возвращается в idle.</p>
+    </main>
+  </body>
+</html>

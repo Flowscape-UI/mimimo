@@ -1,0 +1,22 @@
+Generated with built-in image_gen. Mechanical packing keeps a constant scale, adds jump clearance, and copies exact idle endpoint pixels.
+
+Create a JOYFUL JUMP animation sprite sheet of the exact approved Flowy mascot in reference 1. Reference 2 shows his matching idle poses. Preserve big rounded periwinkle/cobalt blue head, navy face panel, folded cyan upper-RIGHT corner, compact little torso with cyan flowing chest logo, short arms and two feet. NO MOUTH. Both eyes change expression together, never one-eye winks.
+OUTPUT exact 4 columns x 4 rows =16 equal square cells in a square RGBA PNG, real transparent background. No grid lines, labels or outer padding. Full character safely inside each cell, consistent scale throughout. Sprite standing height about 64 percent of a cell, width about 53 percent. Standing FEET baseline is 92 percent of cell height, leaving ample transparent space ABOVE THE HEAD for the jump. Camera locked, central x position fixed. Jump rises about 16 percent of cell height. Do not scale sprites independently to fill cells. Airborne poses must be visibly HIGHER within their cells, not simply bent legs at the same baseline.
+STORY, row-major frames zero-based:
+0 neutral idle, arms down, square cyan eyes forward, feet on baseline.
+1 anticipation: small bend at knees, torso lowers a little, arms start to move backward, both eyes brighten together.
+2 deepest small squash, head and body lowered slightly, arms behind sides, both eyes happy upward chevrons.
+3 push-off: legs extend, arms swing upward, feet just leaving ground.
+4 rising: whole character moves up, arms raised, both eyes happy chevrons.
+5 rising higher: feet tuck slightly, arms up and outward, cheerful face without mouth.
+6 near apex: whole character high, both feet clearly far above baseline, hands up.
+7 apex: weightless joyful pose, arms wide overhead, legs bent, both eyes matching joyful chevrons.
+8 apex hold: same airborne height, playful tiny torso tilt 3 degrees, arms overhead. Upper-right folded corner stays on same side.
+9 descent begins: drops slightly, arms start to lower, eyes still matching joyful chevrons.
+10 descending: feet extend toward landing, arms outward for balance.
+11 near landing: toes just above original baseline, arms lowering.
+12 landing squash: BOTH feet on original baseline, knees flex, head/body compress slightly, both eyes briefly happy closed slits together.
+13 recover: body rises back toward normal height, arms move down, both eyes reopen matching squares.
+14 settle: close to neutral stance, hands relaxed, both eyes centered.
+15 exactly original neutral idle stance, arms down, square eyes, feet on original baseline.
+Only one joyful jump. No floor, cast shadow, dust, sparkles, confetti, movement lines, props, UI panel, stylus or floating icons. Maintain chunky low-resolution pixel art, consistent pixel grid, restrained flat blue shading, hard edges. No mouth, no gradients, no character redesign. True transparent alpha in all empty pixels.

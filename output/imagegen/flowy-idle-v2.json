@@ -1,0 +1,9 @@
+{
+  "type": "sprite",
+  "path": "./flowy-idle-v2.png",
+  "columns": 4,
+  "rows": 4,
+  "frameCount": 16,
+  "fps": 4,
+  "loop": true
+}

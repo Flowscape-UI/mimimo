@@ -1,0 +1,33 @@
+{
+  "name": "mimimo-workspace",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.33.2",
+  "engines": {
+    "node": ">=24.11.0"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:playground": "turbo run dev --filter=@mimimo/playground",
+    "dev:docs": "turbo run dev --filter=@mimimo/docs",
+    "build": "turbo run build",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "pnpm lint && pnpm format:check && turbo run typecheck test build",
+    "test:browser": "pnpm build && pnpm --filter @mimimo/playground test:browser",
+    "test:docs": "pnpm build && pnpm --filter @mimimo/docs test:browser"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.12.0",
+    "jiti": "2.7.0",
+    "prettier": "3.9.9",
+    "turbo": "2.11.7",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.71.0",
+    "@types/node": "24.19.1"
+  }
+}
