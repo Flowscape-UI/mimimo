@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "@flowscape-ui/dsk": "1.0.0",
-    "mimimo": "workspace:*",
-    "mimimo-pet-byte": "workspace:*",
-    "mimimo-pet-mochi": "workspace:*",
-    "mimimo-pet-flowy": "workspace:*"
+    "@flowscape-ui/mimimo": "workspace:*",
+    "@flowscape-ui/mimimo-pet-byte": "workspace:*",
+    "@flowscape-ui/mimimo-pet-mochi": "workspace:*",
+    "@flowscape-ui/mimimo-pet-flowy": "workspace:*"
   },
   "devDependencies": {
     "@playwright/test": "1.63.0",

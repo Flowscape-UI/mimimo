@@ -15,10 +15,10 @@ The first publication needs an authenticated maintainer because an npm package m
 After all four packages exist, configure each with npm CLI 11.15+ and an account with 2FA:
 
 ```sh
-npm trust github mimimo --repo Flowscape-UI/mimimo --file release.yml --allow-publish --yes
-npm trust github mimimo-pet-mochi --repo Flowscape-UI/mimimo --file release.yml --allow-publish --yes
-npm trust github mimimo-pet-byte --repo Flowscape-UI/mimimo --file release.yml --allow-publish --yes
-npm trust github mimimo-pet-flowy --repo Flowscape-UI/mimimo --file release.yml --allow-publish --yes
+npm trust github @flowscape-ui/mimimo --repo Flowscape-UI/mimimo --file release.yml --allow-publish --yes
+npm trust github @flowscape-ui/mimimo-pet-mochi --repo Flowscape-UI/mimimo --file release.yml --allow-publish --yes
+npm trust github @flowscape-ui/mimimo-pet-byte --repo Flowscape-UI/mimimo --file release.yml --allow-publish --yes
+npm trust github @flowscape-ui/mimimo-pet-flowy --repo Flowscape-UI/mimimo --file release.yml --allow-publish --yes
 ```
 
 These commands may require interactive authentication. Never commit npm credentials. The release workflow uses GitHub OIDC with `id-token: write`, not a long-lived npm secret. The trust must match this repository and `release.yml` exactly. See [npm trusted publishing](https://docs.npmjs.com/trusted-publishers/).

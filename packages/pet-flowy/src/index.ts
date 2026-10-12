@@ -1,4 +1,4 @@
-import type { SpriteState } from 'mimimo';
+import type { SpriteState } from '@flowscape-ui/mimimo';
 const idle: SpriteState = {
   type: 'sprite',
   path: new URL('./assets/flowy-idle.png', import.meta.url).href,
@@ -37,4 +37,4 @@ export const flowy = {
   height: 128,
   initialState: 'idle',
   animations,
-} as const satisfies import('mimimo').PetDefinition;
+} as const satisfies import('@flowscape-ui/mimimo').PetDefinition;

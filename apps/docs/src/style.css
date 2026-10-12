@@ -1267,7 +1267,8 @@
   .cast-flowy-sprite {
     width: 100%;
     height: 100%;
-    background: url('mimimo-pet-flowy/assets/flowy-idle.png') 0 0 / 400% 400%;
+    background: url('@flowscape-ui/mimimo-pet-flowy/assets/flowy-idle.png') 0
+      0 / 400% 400%;
     image-rendering: pixelated;
   }
   .cast-caption {

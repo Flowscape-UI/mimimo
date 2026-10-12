@@ -1,6 +1,6 @@
 import { defineComponent, onMounted, onBeforeUnmount, watch } from 'vue';
 import { useData } from 'vitepress';
-import type { Pet } from 'mimimo';
+import type { Pet } from '@flowscape-ui/mimimo';
 import { createFlowyRoutine } from '../../src/flowy-routine';
 
 export const SiteFlowy = defineComponent({
@@ -14,7 +14,7 @@ export const SiteFlowy = defineComponent({
     const lifetime = new AbortController();
     onMounted(async () => {
       const [{ createPet }, { flowyStates }] = await Promise.all([
-        import('mimimo'),
+        import('@flowscape-ui/mimimo'),
         import('../../src/flowy'),
       ]);
       if (lifetime.signal.aborted) return;

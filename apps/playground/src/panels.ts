@@ -1,4 +1,4 @@
-import type { Pet } from 'mimimo';
+import type { Pet } from '@flowscape-ui/mimimo';
 
 const icons = {
   write:

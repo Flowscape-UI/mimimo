@@ -27,8 +27,8 @@ resume не отменяет уменьшение движения, скрыти
 ::: code-group
 
 ```ts [Vanilla]
-import { createPet } from 'mimimo';
-import { mochi } from 'mimimo-pet-mochi';
+import { createPet } from '@flowscape-ui/mimimo';
+import { mochi } from '@flowscape-ui/mimimo-pet-mochi';
 
 // Call after your container mounts.
 export function mountCompanion(container: HTMLElement) {
@@ -51,8 +51,8 @@ export function mountCompanion(container: HTMLElement) {
 ```tsx [React]
 'use client';
 import { useEffect, useRef } from 'react';
-import { createPet } from 'mimimo';
-import { mochi } from 'mimimo-pet-mochi';
+import { createPet } from '@flowscape-ui/mimimo';
+import { mochi } from '@flowscape-ui/mimimo-pet-mochi';
 
 export default function Companion() {
   const host = useRef<HTMLDivElement>(null);
@@ -79,8 +79,8 @@ export default function Companion() {
 ```vue [Vue]
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from 'vue';
-import { createPet } from 'mimimo';
-import { mochi } from 'mimimo-pet-mochi';
+import { createPet } from '@flowscape-ui/mimimo';
+import { mochi } from '@flowscape-ui/mimimo-pet-mochi';
 const host = ref<HTMLElement | null>(null);
 let cleanup: (() => void) | undefined;
 onMounted(() => {

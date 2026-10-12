@@ -1,22 +1,22 @@
-# mimimo-pet-flowy
+# @flowscape-ui/mimimo-pet-flowy
 
-[![npm](https://img.shields.io/npm/v/mimimo-pet-flowy?color=ffbe3d)](https://www.npmjs.com/package/mimimo-pet-flowy) [![MIT](https://img.shields.io/badge/license-MIT-f477c5)](https://github.com/Flowscape-UI/mimimo/blob/main/LICENSE)
+[![npm](https://img.shields.io/npm/v/@flowscape-ui/mimimo-pet-flowy?color=ffbe3d)](https://www.npmjs.com/package/@flowscape-ui/mimimo-pet-flowy) [![MIT](https://img.shields.io/badge/license-MIT-f477c5)](https://github.com/Flowscape-UI/mimimo/blob/main/LICENSE)
 
-**Flowy** - A blue pixel artist who brings your ideas to life. An independent artwork pack for [Mimimo](https://www.npmjs.com/package/mimimo), by Flowscape Team.
+**Flowy** - A blue pixel artist who brings your ideas to life. An independent artwork pack for [Mimimo](https://www.npmjs.com/package/@flowscape-ui/mimimo), by Flowscape Team.
 
 ![Flowy preview](https://raw.githubusercontent.com/Flowscape-UI/mimimo/main/docs/media/flowy-idle.gif)
 
 ## Install
 
 ```sh
-npm install mimimo mimimo-pet-flowy
+npm install @flowscape-ui/mimimo @flowscape-ui/mimimo-pet-flowy
 ```
 
 ## Use
 
 ```ts
-import { createPet } from 'mimimo';
-import { flowy } from 'mimimo-pet-flowy';
+import { createPet } from '@flowscape-ui/mimimo';
+import { flowy } from '@flowscape-ui/mimimo-pet-flowy';
 
 // Call after your page or component mounts.
 const pet = createPet({ character: flowy, draggable: true });
@@ -41,7 +41,7 @@ Use React `useEffect` or Vue `onMounted` for creation and clean up the instance 
 
 ![Flowy celebrating](https://raw.githubusercontent.com/Flowscape-UI/mimimo/main/docs/media/flowy-happy.gif)
 
-The three transparent PNG sprite sheets ship in `dist/assets`. The exported definition resolves them relative to the module using `import.meta.url`. Vite and similar bundlers copy them into your application build. If you redistribute the JavaScript directly, keep its adjacent `assets` directory. Asset exports are also available as `mimimo-pet-flowy/assets/flowy-idle.png`, `flowy-working.png` and `flowy-happy.png`.
+The three transparent PNG sprite sheets ship in `dist/assets`. The exported definition resolves them relative to the module using `import.meta.url`. Vite and similar bundlers copy them into your application build. If you redistribute the JavaScript directly, keep its adjacent `assets` directory. Asset exports are also available as `@flowscape-ui/mimimo-pet-flowy/assets/flowy-idle.png`, `flowy-working.png` and `flowy-happy.png`.
 
 Idle uses 16 frames at 4 fps; working uses 32 frames at 4 fps; happy uses 24 frames at 12 fps. Render at integer scales where possible for crisp pixels.
 

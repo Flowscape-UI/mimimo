@@ -2,8 +2,8 @@ import { defineComponent, h, onMounted, onBeforeUnmount } from 'vue';
 import { useData, withBase } from 'vitepress';
 import markup from '../../src/home.html?raw';
 import russianMarkup from '../../src/home.ru.html?raw';
-import { mochi } from 'mimimo-pet-mochi';
-import { byte } from 'mimimo-pet-byte';
+import { mochi } from '@flowscape-ui/mimimo-pet-mochi';
+import { byte } from '@flowscape-ui/mimimo-pet-byte';
 export const Home = defineComponent({
   name: 'MimimoHome',
   setup() {

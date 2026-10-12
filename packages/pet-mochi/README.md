@@ -1,22 +1,22 @@
-# mimimo-pet-mochi
+# @flowscape-ui/mimimo-pet-mochi
 
-[![npm](https://img.shields.io/npm/v/mimimo-pet-mochi?color=ffbe3d)](https://www.npmjs.com/package/mimimo-pet-mochi) [![MIT](https://img.shields.io/badge/license-MIT-f477c5)](https://github.com/Flowscape-UI/mimimo/blob/main/LICENSE)
+[![npm](https://img.shields.io/npm/v/@flowscape-ui/mimimo-pet-mochi?color=ffbe3d)](https://www.npmjs.com/package/@flowscape-ui/mimimo-pet-mochi) [![MIT](https://img.shields.io/badge/license-MIT-f477c5)](https://github.com/Flowscape-UI/mimimo/blob/main/LICENSE)
 
-**Mochi** - A soft pink companion with a big heart. An independent artwork pack for [Mimimo](https://www.npmjs.com/package/mimimo), by Flowscape Team.
+**Mochi** - A soft pink companion with a big heart. An independent artwork pack for [Mimimo](https://www.npmjs.com/package/@flowscape-ui/mimimo), by Flowscape Team.
 
 ![Mochi preview](https://raw.githubusercontent.com/Flowscape-UI/mimimo/main/docs/media/mochi.gif)
 
 ## Install
 
 ```sh
-npm install mimimo mimimo-pet-mochi
+npm install @flowscape-ui/mimimo @flowscape-ui/mimimo-pet-mochi
 ```
 
 ## Use
 
 ```ts
-import { createPet } from 'mimimo';
-import { mochi } from 'mimimo-pet-mochi';
+import { createPet } from '@flowscape-ui/mimimo';
+import { mochi } from '@flowscape-ui/mimimo-pet-mochi';
 
 // Call after your page or component mounts.
 const pet = createPet({ character: mochi, draggable: true });

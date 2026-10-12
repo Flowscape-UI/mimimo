@@ -1,13 +1,13 @@
 # mimimo
 
-[![npm](https://img.shields.io/npm/v/mimimo?color=ffbe3d)](https://www.npmjs.com/package/mimimo) [![MIT](https://img.shields.io/badge/license-MIT-f477c5)](https://github.com/Flowscape-UI/mimimo/blob/main/LICENSE)
+[![npm](https://img.shields.io/npm/v/@flowscape-ui/mimimo?color=ffbe3d)](https://www.npmjs.com/package/@flowscape-ui/mimimo) [![MIT](https://img.shields.io/badge/license-MIT-f477c5)](https://github.com/Flowscape-UI/mimimo/blob/main/LICENSE)
 
 ![Mimimo companions](https://raw.githubusercontent.com/Flowscape-UI/mimimo/main/docs/media/banner.png)
 
 ## Install
 
 ```sh
-npm install mimimo mimimo-pet-mochi
+npm install @flowscape-ui/mimimo @flowscape-ui/mimimo-pet-mochi
 ```
 
 The core contains no artwork. Install one of the independent Mochi, Byte or Flowy packs, or supply your own assets. ESM and TypeScript declarations are included.
@@ -19,8 +19,8 @@ The core contains no artwork. Install one of the independent Mochi, Byte or Flow
 Tiny website companions by Flowscape. TypeScript, no runtime framework or bundled pets.
 
 ```ts
-import { createPet } from 'mimimo';
-import { mochi } from 'mimimo-pet-mochi';
+import { createPet } from '@flowscape-ui/mimimo';
+import { mochi } from '@flowscape-ui/mimimo-pet-mochi';
 
 // Call after your component mounts.
 const pet = createPet({ character: mochi, draggable: true });
@@ -168,8 +168,8 @@ Changing the default affects subsequent fallbacks without interrupting the curre
 ### Container coordinates and anchors
 
 ```ts
-import { createPet } from 'mimimo';
-import { mochi } from 'mimimo-pet-mochi';
+import { createPet } from '@flowscape-ui/mimimo';
+import { mochi } from '@flowscape-ui/mimimo-pet-mochi';
 
 const preview = document.querySelector<HTMLElement>('#preview')!;
 const pet = createPet({

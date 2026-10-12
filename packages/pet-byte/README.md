@@ -1,22 +1,22 @@
-# mimimo-pet-byte
+# @flowscape-ui/mimimo-pet-byte
 
-[![npm](https://img.shields.io/npm/v/mimimo-pet-byte?color=ffbe3d)](https://www.npmjs.com/package/mimimo-pet-byte) [![MIT](https://img.shields.io/badge/license-MIT-f477c5)](https://github.com/Flowscape-UI/mimimo/blob/main/LICENSE)
+[![npm](https://img.shields.io/npm/v/@flowscape-ui/mimimo-pet-byte?color=ffbe3d)](https://www.npmjs.com/package/@flowscape-ui/mimimo-pet-byte) [![MIT](https://img.shields.io/badge/license-MIT-f477c5)](https://github.com/Flowscape-UI/mimimo/blob/main/LICENSE)
 
-**Byte** - A curious mint robot for your interface. An independent artwork pack for [Mimimo](https://www.npmjs.com/package/mimimo), by Flowscape Team.
+**Byte** - A curious mint robot for your interface. An independent artwork pack for [Mimimo](https://www.npmjs.com/package/@flowscape-ui/mimimo), by Flowscape Team.
 
 ![Byte preview](https://raw.githubusercontent.com/Flowscape-UI/mimimo/main/docs/media/byte.gif)
 
 ## Install
 
 ```sh
-npm install mimimo mimimo-pet-byte
+npm install @flowscape-ui/mimimo @flowscape-ui/mimimo-pet-byte
 ```
 
 ## Use
 
 ```ts
-import { createPet } from 'mimimo';
-import { byte } from 'mimimo-pet-byte';
+import { createPet } from '@flowscape-ui/mimimo';
+import { byte } from '@flowscape-ui/mimimo-pet-byte';
 
 // Call after your page or component mounts.
 const pet = createPet({ character: byte, draggable: true });

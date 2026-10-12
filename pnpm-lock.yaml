@@ -35,16 +35,16 @@ importers:
 
   apps/docs:
     dependencies:
-      mimimo:
+      '@flowscape-ui/mimimo':
         specifier: workspace:*
         version: link:../../packages/core
-      mimimo-pet-byte:
+      '@flowscape-ui/mimimo-pet-byte':
         specifier: workspace:*
         version: link:../../packages/pet-byte
-      mimimo-pet-flowy:
+      '@flowscape-ui/mimimo-pet-flowy':
         specifier: workspace:*
         version: link:../../packages/pet-flowy
-      mimimo-pet-mochi:
+      '@flowscape-ui/mimimo-pet-mochi':
         specifier: workspace:*
         version: link:../../packages/pet-mochi
     devDependencies:
@@ -66,16 +66,16 @@ importers:
       '@flowscape-ui/dsk':
         specifier: 1.0.0
         version: 1.0.0
-      mimimo:
+      '@flowscape-ui/mimimo':
         specifier: workspace:*
         version: link:../../packages/core
-      mimimo-pet-byte:
+      '@flowscape-ui/mimimo-pet-byte':
         specifier: workspace:*
         version: link:../../packages/pet-byte
-      mimimo-pet-flowy:
+      '@flowscape-ui/mimimo-pet-flowy':
         specifier: workspace:*
         version: link:../../packages/pet-flowy
-      mimimo-pet-mochi:
+      '@flowscape-ui/mimimo-pet-mochi':
         specifier: workspace:*
         version: link:../../packages/pet-mochi
     devDependencies:
@@ -94,7 +94,7 @@ importers:
 
   packages/pet-byte:
     devDependencies:
-      mimimo:
+      '@flowscape-ui/mimimo':
         specifier: workspace:*
         version: link:../core
       tsdown:
@@ -103,7 +103,7 @@ importers:
 
   packages/pet-flowy:
     devDependencies:
-      mimimo:
+      '@flowscape-ui/mimimo':
         specifier: workspace:*
         version: link:../core
       tsdown:
@@ -112,7 +112,7 @@ importers:
 
   packages/pet-mochi:
     devDependencies:
-      mimimo:
+      '@flowscape-ui/mimimo':
         specifier: workspace:*
         version: link:../core
       tsdown:

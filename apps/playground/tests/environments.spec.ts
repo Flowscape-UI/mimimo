@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { readFile } from 'node:fs/promises';
-import type { Pet, createPet } from 'mimimo';
+import type { Pet, createPet } from '@flowscape-ui/mimimo';
 declare global {
   interface Window {
     layerPet: Pet;
@@ -8,7 +8,10 @@ declare global {
   }
 }
 test.beforeEach(async ({ page }) => {
-  const bundle = await readFile(new URL(import.meta.resolve('mimimo')), 'utf8');
+  const bundle = await readFile(
+    new URL(import.meta.resolve('@flowscape-ui/mimimo')),
+    'utf8',
+  );
   await page.route('**/layer.js', (route) =>
     route.fulfill({ contentType: 'text/javascript', body: bundle }),
   );
@@ -22,7 +25,7 @@ test.beforeEach(async ({ page }) => {
   await page.evaluate(async () => {
     const path = '/layer.js';
     window.createLayerPet = (
-      (await import(path)) as typeof import('mimimo')
+      (await import(path)) as typeof import('@flowscape-ui/mimimo')
     ).createPet;
   });
 });

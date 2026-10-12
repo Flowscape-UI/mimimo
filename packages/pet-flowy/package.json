@@ -1,5 +1,5 @@
 {
-  "name": "mimimo-pet-flowy",
+  "name": "@flowscape-ui/mimimo-pet-flowy",
   "version": "0.1.0",
   "type": "module",
   "description": "Flowy, the pixel artist companion for Mimimo by Flowscape.",
@@ -22,10 +22,10 @@
   },
   "devDependencies": {
     "tsdown": "0.23.1",
-    "mimimo": "workspace:*"
+    "@flowscape-ui/mimimo": "workspace:*"
   },
   "peerDependencies": {
-    "mimimo": "^0.1.0"
+    "@flowscape-ui/mimimo": "^0.1.0"
   },
   "license": "MIT",
   "author": "Flowscape Team",
@@ -39,7 +39,7 @@
     "url": "https://github.com/Flowscape-UI/mimimo/issues"
   },
   "keywords": [
-    "mimimo",
+    "@flowscape-ui/mimimo",
     "companion",
     "mascot",
     "pet",

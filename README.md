@@ -3,7 +3,7 @@
 ![Mimimo - Little companions. Big personality.](https://raw.githubusercontent.com/Flowscape-UI/mimimo/main/docs/media/banner.png)
 
 [![CI](https://github.com/Flowscape-UI/mimimo/actions/workflows/ci.yml/badge.svg)](https://github.com/Flowscape-UI/mimimo/actions/workflows/ci.yml)
-[![npm](https://img.shields.io/npm/v/mimimo?color=ffbe3d)](https://www.npmjs.com/package/mimimo)
+[![npm](https://img.shields.io/npm/v/@flowscape-ui/mimimo?color=ffbe3d)](https://www.npmjs.com/package/@flowscape-ui/mimimo)
 [![MIT](https://img.shields.io/badge/license-MIT-f477c5)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-first-35dff2)](packages/core)
 
@@ -21,12 +21,12 @@ Mimimo is a framework-independent TypeScript library. Core handles placement, an
 ## Start small
 
 ```sh
-npm install mimimo mimimo-pet-flowy
+npm install @flowscape-ui/mimimo @flowscape-ui/mimimo-pet-flowy
 ```
 
 ```ts
-import { createPet } from 'mimimo';
-import { flowy } from 'mimimo-pet-flowy';
+import { createPet } from '@flowscape-ui/mimimo';
+import { flowy } from '@flowscape-ui/mimimo-pet-flowy';
 
 // Run after your page or component mounts.
 const pet = createPet({
@@ -66,12 +66,12 @@ GitHub renders the prose and code. Run the documentation app to use its interact
 
 ## Packages
 
-| Package                                  | Purpose                                            |
-| ---------------------------------------- | -------------------------------------------------- |
-| [`mimimo`](packages/core)                | Framework-independent core, no bundled pet artwork |
-| [`mimimo-pet-mochi`](packages/pet-mochi) | Mochi: idle, happy, thinking, sleep                |
-| [`mimimo-pet-byte`](packages/pet-byte)   | Byte: idle, happy, thinking, sleep                 |
-| [`mimimo-pet-flowy`](packages/pet-flowy) | Flowy: idle, working, happy                        |
+| Package                                                | Purpose                                            |
+| ------------------------------------------------------ | -------------------------------------------------- |
+| [`@flowscape-ui/mimimo`](packages/core)                | Framework-independent core, no bundled pet artwork |
+| [`@flowscape-ui/mimimo-pet-mochi`](packages/pet-mochi) | Mochi: idle, happy, thinking, sleep                |
+| [`@flowscape-ui/mimimo-pet-byte`](packages/pet-byte)   | Byte: idle, happy, thinking, sleep                 |
+| [`@flowscape-ui/mimimo-pet-flowy`](packages/pet-flowy) | Flowy: idle, working, happy                        |
 
 Packages are ESM with TypeScript declarations. Pet packs have a peer dependency on Mimimo. The workspace root, playground and documentation apps are private and are never published.
 

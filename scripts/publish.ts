@@ -13,7 +13,7 @@ for (const dir of ['core', 'pet-mochi', 'pet-byte', 'pet-flowy']) {
   )
     throw new Error(`Tag does not match ${pkg.name}@${pkg.version}`);
   const response = await fetch(
-    `https://registry.npmjs.org/${pkg.name}/${pkg.version}`,
+    `https://registry.npmjs.org/${encodeURIComponent(pkg.name)}/${pkg.version}`,
   );
   if (response.ok) {
     console.log(`Already published: ${pkg.name}@${pkg.version}`);
@@ -23,7 +23,10 @@ for (const dir of ['core', 'pet-mochi', 'pet-byte', 'pet-flowy']) {
     throw new Error(
       `Registry returned ${response.status}; refusing to assume the version is unpublished.`,
     );
-  const tarball = resolve('.artifacts', `${pkg.name}-${pkg.version}.tgz`);
+  const tarball = resolve(
+    '.artifacts',
+    `${pkg.name.replace(/^@/, '').replace('/', '-')}-${pkg.version}.tgz`,
+  );
   const args = ['publish', tarball, '--access', 'public'];
   execFileSync(
     npm,

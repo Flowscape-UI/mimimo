@@ -8,10 +8,10 @@ import {
   type PetState,
   type PetAction,
   type PetAnchor,
-} from 'mimimo';
-import { mochi } from 'mimimo-pet-mochi';
-import { byte } from 'mimimo-pet-byte';
-import { flowy } from 'mimimo-pet-flowy';
+} from '@flowscape-ui/mimimo';
+import { mochi } from '@flowscape-ui/mimimo-pet-mochi';
+import { byte } from '@flowscape-ui/mimimo-pet-byte';
+import { flowy } from '@flowscape-ui/mimimo-pet-flowy';
 import { testStates } from './assets';
 import { view } from './view';
 import { mountDemoPanel } from './panels';

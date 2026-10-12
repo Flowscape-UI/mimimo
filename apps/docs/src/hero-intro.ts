@@ -1,5 +1,5 @@
 import { homeText } from './home-copy';
-import type { Pet } from 'mimimo';
+import type { Pet } from '@flowscape-ui/mimimo';
 
 export function startHeroIntro(root: HTMLElement, pet: Pet, language = 'en') {
   const t = homeText(language);

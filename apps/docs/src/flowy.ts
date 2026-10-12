@@ -1,2 +1,2 @@
-import { flowy } from 'mimimo-pet-flowy';
+import { flowy } from '@flowscape-ui/mimimo-pet-flowy';
 export const flowyStates = flowy.animations;

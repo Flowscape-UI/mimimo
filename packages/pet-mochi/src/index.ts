@@ -1,4 +1,4 @@
-import type { PetDefinition } from 'mimimo';
+import type { PetDefinition } from '@flowscape-ui/mimimo';
 
 // Original lightweight vector artwork by Flowscape. No remote assets are fetched.
 function frame(

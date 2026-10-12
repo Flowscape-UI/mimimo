@@ -1,7 +1,7 @@
 import { defineComponent, h, onMounted, onBeforeUnmount, ref } from 'vue';
 import { useData } from 'vitepress';
-import type { Pet } from 'mimimo';
-import { mochi } from 'mimimo-pet-mochi';
+import type { Pet } from '@flowscape-ui/mimimo';
+import { mochi } from '@flowscape-ui/mimimo-pet-mochi';
 
 export const PetDemo = defineComponent({
   props: { topic: { type: String, default: 'create-pet' } },
@@ -34,10 +34,12 @@ export const PetDemo = defineComponent({
         async (entries) => {
           if (!entries.some((entry) => entry.isIntersecting)) return;
           observer?.disconnect();
-          const core = await import('mimimo').catch((error: unknown) => {
-            report(String(error));
-            return undefined;
-          });
+          const core = await import('@flowscape-ui/mimimo').catch(
+            (error: unknown) => {
+              report(String(error));
+              return undefined;
+            },
+          );
           if (!core || disposed) return;
           const { createPet } = core;
           stillFrame = mochi.animations.happy.frames[0];

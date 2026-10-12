@@ -1,5 +1,5 @@
 import { homeText } from './home-copy';
-import { createPet } from 'mimimo';
+import { createPet } from '@flowscape-ui/mimimo';
 import { flowyStates } from './flowy';
 import { startHeroIntro } from './hero-intro';
 import { mountScrollReveal } from './scroll-reveal';
@@ -162,7 +162,7 @@ export function mountHomepage(language = 'en') {
   const offClick = pet.on('click', hello);
   function example(local: boolean) {
     element('#starter-code').textContent =
-      "import { createPet } from 'mimimo';\nimport { mochi } from 'mimimo-pet-mochi';\n\n// Run after the page mounts.\n" +
+      "import { createPet } from '@flowscape-ui/mimimo';\nimport { mochi } from '@flowscape-ui/mimimo-pet-mochi';\n\n// Run after the page mounts.\n" +
       (local
         ? "const container = document.querySelector<HTMLElement>('#pet-home');\nif (!container) throw new Error('Missing pet home');\n\n"
         : '') +

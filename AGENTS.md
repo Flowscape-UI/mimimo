@@ -8,4 +8,4 @@
 - Support keyboard access, reduced motion, hide controls and narrow screens.
 - Run pnpm check and relevant browser tests. Report actual results.
 - Write comments and maintenance docs in English. Use short hyphens in prose.
-- The owner approved public npm releases for mimimo, mimimo-pet-mochi, mimimo-pet-byte and mimimo-pet-flowy, with MIT licensing for code and bundled artwork. Keep the root and apps private. Additional package names or licensing changes require an owner decision.
+- The owner approved public npm releases for @flowscape-ui/mimimo, @flowscape-ui/mimimo-pet-mochi, @flowscape-ui/mimimo-pet-byte and @flowscape-ui/mimimo-pet-flowy, with MIT licensing for code and bundled artwork. Keep the root and apps private. Additional package names or licensing changes require an owner decision.

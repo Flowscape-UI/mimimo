@@ -1,5 +1,5 @@
-import type { PetState } from 'mimimo';
-import { mochi } from 'mimimo-pet-mochi';
+import type { PetState } from '@flowscape-ui/mimimo';
+import { mochi } from '@flowscape-ui/mimimo-pet-mochi';
 
 export function testStates(): Record<string, PetState> {
   const sheet =

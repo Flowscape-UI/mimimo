@@ -1,5 +1,5 @@
 {
-  "name": "mimimo",
+  "name": "@flowscape-ui/mimimo",
   "version": "0.1.0",
   "type": "module",
   "description": "Tiny website companions with a framework-independent TypeScript API.",
@@ -35,7 +35,7 @@
     "url": "https://github.com/Flowscape-UI/mimimo/issues"
   },
   "keywords": [
-    "mimimo",
+    "@flowscape-ui/mimimo",
     "companion",
     "mascot",
     "pet",

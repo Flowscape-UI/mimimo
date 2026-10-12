@@ -11,10 +11,10 @@
     "preview": "vitepress preview --host 127.0.0.1 --port 5193 --strictPort"
   },
   "dependencies": {
-    "mimimo": "workspace:*",
-    "mimimo-pet-mochi": "workspace:*",
-    "mimimo-pet-byte": "workspace:*",
-    "mimimo-pet-flowy": "workspace:*"
+    "@flowscape-ui/mimimo": "workspace:*",
+    "@flowscape-ui/mimimo-pet-mochi": "workspace:*",
+    "@flowscape-ui/mimimo-pet-byte": "workspace:*",
+    "@flowscape-ui/mimimo-pet-flowy": "workspace:*"
   },
   "devDependencies": {
     "@playwright/test": "1.63.0",

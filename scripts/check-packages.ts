@@ -84,10 +84,10 @@ writeFileSync(
   `
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { createPet, definePet } from 'mimimo';
-import { mochi } from 'mimimo-pet-mochi';
-import { byte } from 'mimimo-pet-byte';
-import { flowy } from 'mimimo-pet-flowy';
+import { createPet, definePet } from '@flowscape-ui/mimimo';
+import { mochi } from '@flowscape-ui/mimimo-pet-mochi';
+import { byte } from '@flowscape-ui/mimimo-pet-byte';
+import { flowy } from '@flowscape-ui/mimimo-pet-flowy';
 for (const pet of [mochi, byte, flowy]) assert.equal(definePet(pet), pet);
 assert.throws(() => createPet({ character: flowy }), /client/);
 for (const state of Object.values(flowy.animations)) {
