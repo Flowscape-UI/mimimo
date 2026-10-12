@@ -1,9 +1,11 @@
 # Mimimo
 
+[Documentation](https://flowscape-ui.github.io/mimimo/) · [Документация](https://flowscape-ui.github.io/mimimo/ru/)
+
 ![Mimimo - Little companions. Big personality.](https://raw.githubusercontent.com/Flowscape-UI/mimimo/main/docs/media/banner.png)
 
 [![CI](https://github.com/Flowscape-UI/mimimo/actions/workflows/ci.yml/badge.svg)](https://github.com/Flowscape-UI/mimimo/actions/workflows/ci.yml)
-[![npm](https://img.shields.io/npm/v/@flowscape-ui/mimimo?color=ffbe3d)](https://www.npmjs.com/package/@flowscape-ui/mimimo)
+[![npm](https://img.shields.io/npm/v/@flowscape-ui/mimimo?color=ffbe3d&logo=npm&label=npm%20version)](https://www.npmjs.com/package/@flowscape-ui/mimimo)
 [![MIT](https://img.shields.io/badge/license-MIT-f477c5)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-first-35dff2)](packages/core)
 

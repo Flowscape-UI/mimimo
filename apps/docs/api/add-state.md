@@ -1,5 +1,7 @@
 # Register media states
 
+[Media formats and live examples](../guide/media) · [Build your own pet pack](../guide/pet-pack)
+
 An animation state describes artwork, not a framework component. Register states at creation or add them later. Reusing a name replaces its media; the first state starts automatically when the pet has no current state.
 
 <PetDemo topic="add-state" />

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1
+
+- Expand npm keywords and link package documentation.
+- Add English and Russian media format demos and a custom pet pack guide.
+- Clarify live npm version badges in package READMEs.
+
 ## 0.1.0
 
 - First public release of the framework-independent Mimimo core.

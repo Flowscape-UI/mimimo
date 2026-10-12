@@ -1,5 +1,7 @@
 # Your own character
 
+[Media formats and live examples](../guide/media) · [Build your own pet pack](../guide/pet-pack)
+
 Define reusable artwork separately from the live instance. A definition contains an id, display name, dimensions and named animations. You can share it between many pets without making core depend on your character pack.
 
 <PetDemo topic="define-pet" />

@@ -1,6 +1,8 @@
 # mimimo
 
-[![npm](https://img.shields.io/npm/v/@flowscape-ui/mimimo?color=ffbe3d)](https://www.npmjs.com/package/@flowscape-ui/mimimo) [![MIT](https://img.shields.io/badge/license-MIT-f477c5)](https://github.com/Flowscape-UI/mimimo/blob/main/LICENSE)
+[Documentation](https://flowscape-ui.github.io/mimimo/) · [Документация](https://flowscape-ui.github.io/mimimo/ru/)
+
+[![npm](https://img.shields.io/npm/v/@flowscape-ui/mimimo?color=ffbe3d&logo=npm&label=npm%20version)](https://www.npmjs.com/package/@flowscape-ui/mimimo) [![MIT](https://img.shields.io/badge/license-MIT-f477c5)](https://github.com/Flowscape-UI/mimimo/blob/main/LICENSE)
 
 ![Mimimo companions](https://raw.githubusercontent.com/Flowscape-UI/mimimo/main/docs/media/banner.png)
 
@@ -252,3 +254,7 @@ Create the instance in React `useEffect` or Vue `onMounted`, then call `destroy(
 ## License
 
 MIT. See [LICENSE](https://github.com/Flowscape-UI/mimimo/blob/main/packages/core/LICENSE).
+
+## Create your own pet
+
+Use PNG, GIF, video, a regular sprite sheet or separate frames. See the [media format guide](https://flowscape-ui.github.io/mimimo/guide/media) and the [pet package tutorial](https://flowscape-ui.github.io/mimimo/guide/pet-pack), based on the included Mochi, Byte and Flowy packs.

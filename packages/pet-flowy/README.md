@@ -1,6 +1,8 @@
 # @flowscape-ui/mimimo-pet-flowy
 
-[![npm](https://img.shields.io/npm/v/@flowscape-ui/mimimo-pet-flowy?color=ffbe3d)](https://www.npmjs.com/package/@flowscape-ui/mimimo-pet-flowy) [![MIT](https://img.shields.io/badge/license-MIT-f477c5)](https://github.com/Flowscape-UI/mimimo/blob/main/LICENSE)
+[Documentation](https://flowscape-ui.github.io/mimimo/) · [Документация](https://flowscape-ui.github.io/mimimo/ru/)
+
+[![npm](https://img.shields.io/npm/v/@flowscape-ui/mimimo-pet-flowy?color=ffbe3d&logo=npm&label=npm%20version)](https://www.npmjs.com/package/@flowscape-ui/mimimo-pet-flowy) [![MIT](https://img.shields.io/badge/license-MIT-f477c5)](https://github.com/Flowscape-UI/mimimo/blob/main/LICENSE)
 
 **Flowy** - A blue pixel artist who brings your ideas to life. An independent artwork pack for [Mimimo](https://www.npmjs.com/package/@flowscape-ui/mimimo), by Flowscape Team.
 
@@ -65,3 +67,7 @@ The exported definition contains `id`, `name`, `width`, `height` and `animations
 ## License
 
 MIT, including the bundled artwork. Copyright 2026 Flowscape Team. See [LICENSE](https://github.com/Flowscape-UI/mimimo/blob/main/packages/pet-flowy/LICENSE).
+
+## Create your own pet
+
+Use PNG, GIF, video, a regular sprite sheet or separate frames. See the [media format guide](https://flowscape-ui.github.io/mimimo/guide/media) and the [pet package tutorial](https://flowscape-ui.github.io/mimimo/guide/pet-pack), based on the included Mochi, Byte and Flowy packs.

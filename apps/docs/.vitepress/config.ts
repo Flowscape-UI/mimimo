@@ -27,6 +27,16 @@ function sidebar(ru: boolean): DefaultTheme.SidebarItem[] {
           text: ru ? 'Окружения' : 'Environments',
           link: `${base}/guide/environments`,
         },
+        {
+          text: ru
+            ? 'PNG, GIF, видео и спрайты'
+            : 'PNG, GIF, video and sprites',
+          link: `${base}/guide/media`,
+        },
+        {
+          text: ru ? 'Свой пакет питомца' : 'Build a pet pack',
+          link: `${base}/guide/pet-pack`,
+        },
         { text: ru ? 'Обзор API' : 'API overview', link: `${base}/guide/api` },
         { text: ru ? 'Компоненты' : 'Components', link: `${base}/components/` },
       ],
