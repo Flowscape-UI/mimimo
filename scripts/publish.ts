@@ -2,16 +2,21 @@ import { execFileSync } from 'node:child_process';
 import { readFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 
+if (
+  process.env.GITHUB_ACTIONS !== 'true' ||
+  process.env.GITHUB_REF_TYPE !== 'tag'
+)
+  throw new Error('Publish only from GitHub Actions on a version tag.');
+const packages = ['core', 'pet-mochi', 'pet-byte', 'pet-flowy'].map((dir) =>
+  JSON.parse(readFileSync(resolve('packages', dir, 'package.json'), 'utf8')),
+);
+// Validate every package before the first registry mutation.
+for (const pkg of packages)
+  if (process.env.GITHUB_REF_NAME !== `v${pkg.version}`)
+    throw new Error(`Tag does not match ${pkg.name}@${pkg.version}`);
 const windows = process.platform === 'win32';
 const npm = windows ? process.execPath : 'npm';
-for (const dir of ['core', 'pet-mochi', 'pet-byte', 'pet-flowy']) {
-  const cwd = resolve('packages', dir);
-  const pkg = JSON.parse(readFileSync(resolve(cwd, 'package.json'), 'utf8'));
-  if (
-    process.env.GITHUB_REF_TYPE === 'tag' &&
-    process.env.GITHUB_REF_NAME !== `v${pkg.version}`
-  )
-    throw new Error(`Tag does not match ${pkg.name}@${pkg.version}`);
+for (const pkg of packages) {
   const response = await fetch(
     `https://registry.npmjs.org/${encodeURIComponent(pkg.name)}/${pkg.version}`,
   );

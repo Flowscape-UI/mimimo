@@ -8,20 +8,11 @@ Use Node 24.11+ and pnpm 10.33.2. Run `pnpm check`, both browser suites and `pnp
 
 CI repeats these checks on pull requests, main and release runs. Release downloads the exact tarballs produced by its verification job rather than rebuilding different artifacts.
 
-## First publication
+## GitHub-only publication
 
-The first publication needs an authenticated maintainer because an npm package must exist before a trusted publisher can be configured. Run `node scripts/publish.ts` after verification. It publishes core first, then the three pet packs. Existing versions are skipped; registry errors other than 404 stop the release.
+All four packages already have trusted publishers configured for this repository and `release.yml`. Publish only through GitHub Actions with a version tag. The script rejects local execution and validates all four versions before publishing any package. No npm token is stored in the repository.
 
-After all four packages exist, configure each with npm CLI 11.15+ and an account with 2FA:
-
-```sh
-npm trust github @flowscape-ui/mimimo --repo Flowscape-UI/mimimo --file release.yml --allow-publish --yes
-npm trust github @flowscape-ui/mimimo-pet-mochi --repo Flowscape-UI/mimimo --file release.yml --allow-publish --yes
-npm trust github @flowscape-ui/mimimo-pet-byte --repo Flowscape-UI/mimimo --file release.yml --allow-publish --yes
-npm trust github @flowscape-ui/mimimo-pet-flowy --repo Flowscape-UI/mimimo --file release.yml --allow-publish --yes
-```
-
-These commands may require interactive authentication. Never commit npm credentials. The release workflow uses GitHub OIDC with `id-token: write`, not a long-lived npm secret. The trust must match this repository and `release.yml` exactly. See [npm trusted publishing](https://docs.npmjs.com/trusted-publishers/).
+The workflow runs validation, publishes all four verified tarballs using npm OIDC, then creates a GitHub Release with generated notes and attaches the tarballs. Existing npm versions are skipped when retrying a partial release. The GitHub Release is created only after the publish job succeeds.
 
 ## Later releases
 
@@ -30,4 +21,4 @@ These commands may require interactive authentication. Never commit npm credenti
 3. Commit the changes, push main, then push `vX.Y.Z` matching all package versions.
 4. Watch the Release workflow. Confirm the version, integrity and assets on npm.
 
-Manual dispatch on main can resume a partial release. npm versions are immutable; if a published artifact is wrong, fix it and release a new version instead of attempting to replace it.
+To resume a partial release, rerun the failed tag workflow. Manual dispatch is supported only when selecting an existing version tag; runs on main do not publish. npm versions are immutable; if a published artifact is wrong, fix it and release a new version instead of attempting to replace it.
