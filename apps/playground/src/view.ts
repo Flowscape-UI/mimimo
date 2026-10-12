@@ -3,7 +3,7 @@ export const view = `
 <div class="layout">
 <aside class="controls" aria-label="Настройки">
 <section><h2>Питомец</h2><div class="row presets">
-<button data-pet="mochi">Mochi</button><button data-pet="byte">Byte</button><button data-pet="assets">Тестовые ассеты</button><button data-pet="custom">Свой</button>
+<button data-pet="mochi">Mochi</button><button data-pet="byte">Byte</button><button data-pet="flowy">Flowy</button><button data-pet="assets">Тестовые ассеты</button><button data-pet="custom">Свой</button>
 </div><div class="two"><label>Ширина<dsk-input id="width" value="128" min="16" max="512" aria-label="Ширина" tag="px"></dsk-input></label><label>Высота<dsk-input id="height" value="128" min="16" max="512" aria-label="Высота" tag="px"></dsk-input></label></div>
 <div class="row"><label class="check"><input id="draggable" type="checkbox" checked> Перетаскивание</label><label class="check"><input id="chat" type="checkbox"> Тестовый чат</label></div>
 <button id="apply-pet">Применить размер и опции</button><p class="hint">Размер и перетаскивание меняются без пересоздания. Переключение тестового чата пересоздаёт экземпляр.</p></section>

@@ -11,6 +11,7 @@ import {
 } from 'mimimo';
 import { mochi } from 'mimimo-pet-mochi';
 import { byte } from 'mimimo-pet-byte';
+import { flowy } from 'mimimo-pet-flowy';
 import { testStates } from './assets';
 import { view } from './view';
 import { mountDemoPanel } from './panels';
@@ -183,7 +184,9 @@ function recreate() {
         ? 'Mochi'
         : profile === 'byte'
           ? 'Byte'
-          : 'Asset companion',
+          : profile === 'flowy'
+            ? 'Flowy'
+            : 'Asset companion',
     ...size,
     states: Object.fromEntries(
       [...states].map(([name, entry]) => [name, entry.state]),
@@ -327,9 +330,11 @@ function selectProfile(next: string) {
       ? mochi.animations
       : next === 'byte'
         ? byte.animations
-        : next === 'assets'
-          ? testStates()
-          : {};
+        : next === 'flowy'
+          ? flowy.animations
+          : next === 'assets'
+            ? testStates()
+            : {};
   for (const [name, state] of Object.entries(initial))
     states.set(name, { state, urls: [], files: [] });
   reactions = {};
@@ -339,7 +344,9 @@ function selectProfile(next: string) {
         ? { hover: 'curious', click: 'jump', drag: 'grabbed' }[action]
         : next === 'custom'
           ? ''
-          : { hover: 'thinking', click: 'happy', drag: 'sleep' }[action];
+          : next === 'flowy'
+            ? { hover: 'working', click: 'happy', drag: 'happy' }[action]
+            : { hover: 'thinking', click: 'happy', drag: 'sleep' }[action];
   for (const button of document.querySelectorAll<HTMLButtonElement>(
     '[data-pet]',
   ))

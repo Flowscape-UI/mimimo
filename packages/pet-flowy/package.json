@@ -1,0 +1,55 @@
+{
+  "name": "mimimo-pet-flowy",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Flowy, the pixel artist companion for Mimimo by Flowscape.",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./assets/*": "./dist/assets/*"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "tsdown": "0.23.1",
+    "mimimo": "workspace:*"
+  },
+  "peerDependencies": {
+    "mimimo": "^0.1.0"
+  },
+  "license": "MIT",
+  "author": "Flowscape Team",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flowscape-UI/mimimo.git",
+    "directory": "packages/pet-flowy"
+  },
+  "homepage": "https://github.com/Flowscape-UI/mimimo#readme",
+  "bugs": {
+    "url": "https://github.com/Flowscape-UI/mimimo/issues"
+  },
+  "keywords": [
+    "mimimo",
+    "companion",
+    "mascot",
+    "pet",
+    "animation",
+    "typescript"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts"
+}

@@ -27,6 +27,7 @@ export const Home = defineComponent({
         class: 'mimimo-home',
         lang: russian ? 'ru' : 'en',
         innerHTML: (russian ? russianMarkup : markup)
+          .replaceAll('href="/api/', 'href="' + withBase(prefix + '/api/'))
           .replaceAll('{{year}}', String(new Date().getFullYear()))
           .replaceAll('{{mochi}}', mochi.animations.idle.frames[0])
           .replaceAll('{{byte}}', byte.animations.happy.frames[0])

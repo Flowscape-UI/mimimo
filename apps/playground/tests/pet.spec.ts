@@ -99,3 +99,28 @@ test('fits a narrow mobile viewport', async ({ page }) => {
       .getByRole('button', { name: 'Mochi', exact: true }),
   ).toBeInViewport();
 });
+
+test('Flowy pack loads its bundled sprite assets', async ({ page }) => {
+  const missing: string[] = [];
+  page.on('response', (response) => {
+    if (response.url().includes('flowy-') && response.status() >= 400)
+      missing.push(response.url());
+  });
+  await page.goto('/');
+  await page.locator('[data-pet="flowy"]').click();
+  await page.locator('#preload').click();
+  const img = page.locator('[data-mimimo="flowy"] img');
+  await expect(img).toHaveAttribute('src', /flowy-idle/);
+  await expect
+    .poll(() =>
+      img.evaluate(
+        (image: HTMLImageElement) => image.complete && image.naturalWidth > 0,
+      ),
+    )
+    .toBe(true);
+  await page.locator('.state-play[data-state="working"]').click();
+  await expect(img).toHaveAttribute('src', /flowy-working/);
+  await page.locator('.state-play[data-state="happy"]').click();
+  await expect(img).toHaveAttribute('src', /flowy-happy/);
+  expect(missing).toEqual([]);
+});

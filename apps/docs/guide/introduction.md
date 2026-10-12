@@ -97,9 +97,9 @@ onBeforeUnmount(() => cleanup?.());
 
 :::
 
-::: info Developer preview
-The packages currently live in this workspace. Public npm installation is not available yet.
-:::
+```sh
+npm install mimimo mimimo-pet-mochi
+```
 
 ## Fits your application
 

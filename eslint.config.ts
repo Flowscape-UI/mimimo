@@ -9,6 +9,7 @@ export default tseslint.config(
       '**/.vitepress/cache/**',
       '**/test-results/**',
       '**/playwright-report/**',
+      '**/.artifacts/**',
     ],
   },
   js.configs.recommended,

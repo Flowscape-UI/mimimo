@@ -1,13 +1,13 @@
 {
   "name": "mimimo-pet-byte",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "description": "The byte companion for Mimimo, made by Flowscape.",
   "sideEffects": false,
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "exports": {
     ".": {
@@ -25,5 +25,30 @@
   },
   "peerDependencies": {
     "mimimo": "^0.1.0"
-  }
+  },
+  "license": "MIT",
+  "author": "Flowscape Team",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flowscape-UI/mimimo.git",
+    "directory": "packages/pet-byte"
+  },
+  "homepage": "https://github.com/Flowscape-UI/mimimo#readme",
+  "bugs": {
+    "url": "https://github.com/Flowscape-UI/mimimo/issues"
+  },
+  "keywords": [
+    "mimimo",
+    "companion",
+    "mascot",
+    "pet",
+    "animation",
+    "typescript"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts"
 }

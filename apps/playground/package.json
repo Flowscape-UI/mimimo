@@ -13,7 +13,8 @@
     "@flowscape-ui/dsk": "1.0.0",
     "mimimo": "workspace:*",
     "mimimo-pet-byte": "workspace:*",
-    "mimimo-pet-mochi": "workspace:*"
+    "mimimo-pet-mochi": "workspace:*",
+    "mimimo-pet-flowy": "workspace:*"
   },
   "devDependencies": {
     "@playwright/test": "1.63.0",

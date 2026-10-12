@@ -1,30 +1,39 @@
 # mimimo
 
+[![npm](https://img.shields.io/npm/v/mimimo?color=ffbe3d)](https://www.npmjs.com/package/mimimo) [![MIT](https://img.shields.io/badge/license-MIT-f477c5)](https://github.com/Flowscape-UI/mimimo/blob/main/LICENSE)
+
+![Mimimo companions](https://raw.githubusercontent.com/Flowscape-UI/mimimo/main/docs/media/banner.png)
+
+## Install
+
+```sh
+npm install mimimo mimimo-pet-mochi
+```
+
+The core contains no artwork. Install one of the independent Mochi, Byte or Flowy packs, or supply your own assets. ESM and TypeScript declarations are included.
+
+![Flowy working](https://raw.githubusercontent.com/Flowscape-UI/mimimo/main/docs/media/flowy-working.gif)
+
+## Quick start
+
 Tiny website companions by Flowscape. TypeScript, no runtime framework or bundled pets.
 
 ```ts
 import { createPet } from 'mimimo';
+import { mochi } from 'mimimo-pet-mochi';
 
-const pet = createPet();
-pet.addState('relax', { frames: ['/pet/1.png', '/pet/2.png'], fps: 4 });
-pet.addState('wave', {
-  type: 'sprite',
-  path: '/pet/wave.png',
-  columns: 4,
-  rows: 2,
-  frameCount: 8,
-  fps: 12,
-  loop: false,
-});
-pet.play('wave');
+// Call after your component mounts.
+const pet = createPet({ character: mochi, draggable: true });
+pet.addReaction('click', 'happy');
 pet.say('Hello!');
+
 // On unmount:
-pet.destroy();
+// pet.destroy();
 ```
 
 States support still images, frame sequences, uniform-grid sprite sheets, muted video and native GIFs. Frames/sprites use fps and speed; video uses speed. Native GIF timing is controlled by the file, not the library.
 
-Ready-made packs remain supported via createPet({ character }). See the root README for the complete API, custom assets, chat and lifecycle. Development preview; publication is disabled.
+Ready-made packs remain supported via createPet({ character }). See the [interactive documentation source](https://github.com/Flowscape-UI/mimimo/tree/main/apps/docs/api) for complete Vanilla, React and Vue examples. Run the docs app to try the live demos.
 
 ## Message and action panels
 
@@ -235,3 +244,11 @@ Additional runtime events: `resize` carries `width` and `height`; programmatic p
 
 State changes keep the previous decoded frame visible until the next image is decoded or the next video has a frame ready. Superseded loads cannot replace the current state. A failed replacement emits `mediaerror` and leaves the previous frame visible. This prevents blank flashes; matching poses between different animations remains an artwork choice.
 States using the same sprite sheet reuse the existing decoded image and change only its frame coordinates, avoiding atlas replacement during hover transitions.
+
+## Frameworks and SSR
+
+Create the instance in React `useEffect` or Vue `onMounted`, then call `destroy()` from effect cleanup or `onBeforeUnmount`. Importing the package alone does not access the DOM. Keep caller-owned event listeners, timers and requests scoped to the same lifecycle.
+
+## License
+
+MIT. See [LICENSE](https://github.com/Flowscape-UI/mimimo/blob/main/packages/core/LICENSE).

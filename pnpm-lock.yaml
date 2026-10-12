@@ -41,6 +41,9 @@ importers:
       mimimo-pet-byte:
         specifier: workspace:*
         version: link:../../packages/pet-byte
+      mimimo-pet-flowy:
+        specifier: workspace:*
+        version: link:../../packages/pet-flowy
       mimimo-pet-mochi:
         specifier: workspace:*
         version: link:../../packages/pet-mochi
@@ -69,6 +72,9 @@ importers:
       mimimo-pet-byte:
         specifier: workspace:*
         version: link:../../packages/pet-byte
+      mimimo-pet-flowy:
+        specifier: workspace:*
+        version: link:../../packages/pet-flowy
       mimimo-pet-mochi:
         specifier: workspace:*
         version: link:../../packages/pet-mochi
@@ -87,6 +93,15 @@ importers:
         version: 0.23.1(typescript@6.0.3)
 
   packages/pet-byte:
+    devDependencies:
+      mimimo:
+        specifier: workspace:*
+        version: link:../core
+      tsdown:
+        specifier: 0.23.1
+        version: 0.23.1(typescript@6.0.3)
+
+  packages/pet-flowy:
     devDependencies:
       mimimo:
         specifier: workspace:*
